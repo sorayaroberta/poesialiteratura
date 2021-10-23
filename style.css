@@ -1,0 +1,46 @@
+h5 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+body{
+	background: #f5f7f0;
+}
+.todo_site{
+	background: #f5f7f0;
+}
+.include {
+    color: forestgreen;
+}
+
+.name {
+    color: rgb(206, 11, 86);
+}
+.tracos {
+    color:red;
+ }
+.using{
+	color: #323331;
+}
+.semantica{
+	color: #323331;
+}
+.sintaxe{
+	color: #323331;
+}
+.teste {
+	background: #f5f7f0;
+	font-size: 24px;
+}
+
+.nav-wrapper{
+	font-size: 80%;
+	font-family: 'Ubuntu'; 
+	background-color: rgb(206, 11, 86);
+}
+
+.logo{
+	height: 100%;
+	padding-left: 50%; 
+
+}
+

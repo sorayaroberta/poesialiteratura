@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>// Poesia Compilada </title>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+</head>
+
+<body>
+
+    <nav>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown0" class="dropdown-content">
+            <li><a href="#!">Facebook</a></li>
+            <li><a href="#!"> Instagram </a></li>
+            <li class="divider"></li>
+            <li><a href="imprensa.html!">Imprensa</a></li>
+        </ul>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">Facebook</a></li>
+            <li><a href="#!"> Instagram </a></li>
+            <li class="divider"></li>
+            <li><a href="imprensa.html!">Imprensa</a></li>
+        </ul>
+
+        <div class="nav-wrapper">
+            <img alt="Brand" src="logo.svg" class="logo" />
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                <i class="material-icons">menu</i> -->
+            </a>
+            <!-- menu extendido -->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sobre.html">O projeto</a></li>
+                <li><a href="editor/index.html">Editor</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown0"> Mídia <i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <!-- <li><a href="#">Mídia</a></li> -->
+            </ul>
+        </div>
+
+        <!-- menu redimensionado-sanduiche -->
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="#">O projeto </a></li>
+            <li><a href="editor/index.html">Escreva</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"> Mídia <i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+            <!-- <li><a href="#">Mídia</a></li> -->
+        </ul>
+        <!-- <ul class="sidenav" id="mobile-nav"> 
+                 <li><a href="sobre.html"> O projeto </a></li>
+                 <li><a href="#">Mídia</a></li>
+                 <li><a href="http://poesiacompilada.com/editor/">Escreva</a></li>
+
+            </ul> -->
+    </nav>
+
+
+
+    <div class="container">
+
+        <div class="todo_site">
+            <h5 class="teste" id='container'></h5>
+            <h5 id='manifesto'> </h5>
+
+            <script src="conteudo_Manifesto.js"></script>
+            <script>
+                // Navbar
+                const elemsDropdown = document.querySelectorAll(".dropdown-trigger");
+                const instancesDropdown = M.Dropdown.init(elemsDropdown, {
+                    coverTrigger: false
+                });
+                const elemsSidenav = document.querySelectorAll(".sidenav");
+                const instancesSidenav = M.Sidenav.init(elemsSidenav, {
+                    edge: "left"
+                });
+
+                /*$(document).ready(function () {
+                    $(".sidenav").init({
+                        edge: "left"
+                    }).sidenav();
+
+                    $('.dropdown-trigger').init(
+                        {
+                            coverTrigger: false
+
+                        }
+                    ).dropdown();
+                });*/
+
+                var app = document.getElementById('container');
+
+                var writer = new Typewriter(app, {
+                    loop: false,
+                    delay: 55
+                });
+
+                writer.typeString('<span class="include">#include</span> <span class="name">"poesia"</span> <br />')
+                    .typeString('<span class="include">#include</span> <span class="name">"manifesto"<br/></span>')
+                    .typeString('<span class="using"> using namespace poesia;</br> </span>')
+                    .typeString('<span class="tracos"> + <br/></span>')
+                    .pauseFor(10)
+                    .typeString('<span class="sintaxe"> sintaxe->carregar()<br/> </span>')
+                    .typeString('<span class="tracos"> + <br/><span>')
+                    .pauseFor(10)
+                    .typeString('<span class="tracos"> + <br/></span>')
+                    .pauseFor(10)
+                    .typeString('<span class="semantica"> semântica->carregar()<br/> </span>')
+                    /**.typeString(''.concat(...manifesto)) **/
+                    .start();
+
+                var manifesto_tag = document.getElementById('manifesto')
+                setTimeout(() => manifesto_tag.innerHTML = ''.concat(...manifesto), 9500);
+
+
+            </script>
+
+        </div>
+    </div>
+</body>
+
+</html>
