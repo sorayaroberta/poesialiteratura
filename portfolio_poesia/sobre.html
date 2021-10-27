@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>// Poesia Compilada </title>
+    <script src="javascript.js"></script>
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    
+</header>
+
+<body>
+    <main>
+    <nav>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown0" class="dropdown-content">
+            <li class="cor_hover"><a href="#!">Facebook</a></li>
+            <li><a href="#!"> Instagram </a></li>
+            <li class="divider"></li>
+            <li><a href="imprensa.html!">Imprensa</a></li>
+        </ul>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content cor_hover">
+            <li><a href="#!">Facebook</a></li>
+            <li><a href="#!"> Instagram </a></li>
+            <li class="divider"></li>
+            <li><a href="imprensa.html!">Imprensa</a></li>
+        </ul>
+
+        <div class="nav-wrapper">
+            <img alt="Brand" src="logo.svg" class="logo" />
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                <i class="material-icons">menu</i> -->
+            </a>
+            <!-- menu extendido -->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">O Manifesto</a></li>
+                <li><a href="sobre.html">O projeto</a></li>
+                <li><a href="editor/index.html">Editor</a></li>
+                
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown0"> Mídia <i
+                            class="material-icons right">arrow_drop_down</i></a></li>
+                <!-- <li><a href="#">Mídia</a></li> -->
+            </ul>
+        </div>
+
+        <!-- menu redimensionado-sanduiche -->
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="#">O projeto </a></li>
+            <li><a href="editor/index.html">Escreva</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"> Mídia <i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+            <!-- <li><a href="#">Mídia</a></li> -->
+        </ul>
+        <!-- <ul class="sidenav" id="mobile-nav"> 
+                 <li><a href="sobre.html"> O projeto </a></li>
+                 <li><a href="#">Mídia</a></li>
+                 <li><a href="http://poesiacompilada.com/editor/">Escreva</a></li>
+
+            </ul> -->
+    </nav>
+        <div> 
+            <p class="sobre_titulo"> //O que é ?</p>
+            <p class="sobre_paragrafo">
+                Um manifesto literário- <br/>  
+                algorítmico <br/>
+                que compila <br/>
+                códigos de máquinas <br/>
+                com códigos literários <br/>
+            </p>
+
+            <iframe class="video" width="560" height="315"
+             src="https://www.youtube.com/embed/eG3ZoOv_QU0" 
+             title="YouTube video player" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; 
+              picture-in-picture" allowfullscreen></iframe>	
+
+            <p class="sobre_titulo"> //O que não é ?</p>
+            <p class="sobre_paragrafo">
+                Códigos que geram $$ em contas bancárias <br/>  
+            </p>
+            <!-- <figure class="imagem_poesia"> -->
+            <img class="imagem_poesia" src="./poesiacompilada_.png" alt="Uma Poesia Compilada">
+                
+            <!-- </figure> -->
+            
+            <p class="sobre_titulo"> //Como surgiu ?</p>
+            <p class="sobre_paragrafo">
+                O Poesia Compilada surgiu <br/>  
+                quando eu aprendia <br/>
+                a escrever e analisar <br/>
+                algoritmos && poemas no meu <br/>
+                Ensino Médio no IFRN-Caicó. <br/>
+        </div>
+        <!--<script src="conteudo_Manifesto.js"></script> -->
+        <script>
+            // Navbar
+            const elemsDropdown = document.querySelectorAll(".dropdown-trigger");
+            const instancesDropdown = M.Dropdown.init(elemsDropdown, {
+                coverTrigger: false
+            });
+            const elemsSidenav = document.querySelectorAll(".sidenav");
+            const instancesSidenav = M.Sidenav.init(elemsSidenav, {
+                edge: "left"
+            });
+
+            /*$(document).ready(function () {
+                $(".sidenav").init({
+                    edge: "left"
+                }).sidenav();
+
+                $('.dropdown-trigger').init(
+                    {
+                        coverTrigger: false
+
+                    }
+                ).dropdown();
+            });*/
+
+
+
+        </script>
+    </body>
+</html>
