@@ -1,7 +1,36 @@
 h5 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
+@media screen and (min-width : 1000px) { 
+    .iframe{width:700px; height:500px;} 
+} 
+@media screen and (max-width: 1000px) and (min-width : 750px) { 
+    .iframe{width:450px; height:300px; } 
+} 
+
+@media screen and (max-width: 992px) { 
+	.logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+} 
+
+@media screen and (max-width: 750px) { 
+    .iframe{width:260px; height:180px; }
+}
+
+.iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* .iframe{ 
+	width: 500px; 
+	height: 500px;
+} */
+
 body{
 	background: #f5f7f0;
 }
@@ -29,11 +58,11 @@ body{
 }
 .teste {
 	background: #f5f7f0;
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 .nav-wrapper{
-	font-size: 80%;
+	font-size: 0.8rem;
 	font-family: 'Droid Sans Mono', monospace, mono; 
 	background-color: rgb(206, 11, 86);
 }
@@ -42,40 +71,44 @@ body{
 	text-decoration-color: white;
 
 }
-.logo{
-	height: 100%;
-	padding-left: 50%; 
-
-}
+/* .logo{
+	height: 1rem; */
+	/* padding-left: 0rem; 
+} */
 
 .sobre_titulo {
 	text-align: center;
 	color: #333333;
-	font-size: 200%;
+	font-size: 2rem;
 	font-family: 'Droid Sans Mono', monospace, mono ;
+	padding-top: 5rem;
 
 }
 .video{
-	margin-left: 400px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-right: 100px;
+	margin-left: 25rem;
+	margin-top: 2.125rem;
+	margin-bottom: 2.125rem;
+	margin-right: 6.25rem;
 }
 .sobre_paragrafo {
 	text-align: center;
 	color:#333333;;
-	font-size: 150%;
-	margin-left: 100px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-right: 100px;
+	font-size: 1.5rem;
+	margin-left: 6.25rem;
+	margin-top: 3.125rem;
+	margin-bottom: 3.125rem;
+	margin-right: 6.25rem;
 	font-family: 'Droid Sans Mono', monospace, mono ;
 
 }
-.imagem_poesia{
-	position:relative;
-	margin-left: 40em;
+.imagem_poesia {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 50%;
+	/* margin-left: 50%; */
 	/* margin-top: 50px; */
-	margin-right: 40em;
+	/* margin-right: 50%; */
 	/* margin-bottom: 50px; */
 }

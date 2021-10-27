@@ -15,38 +15,37 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Import Google Icon Font-->
-    
+
 </header>
 
 <body>
-    <main>
-    <nav>
-        <!-- Dropdown Structure -->
-        <ul id="dropdown0" class="dropdown-content">
-            <li class="cor_hover"><a href="#!">Facebook</a></li>
-            <li><a href="#!"> Instagram </a></li>
-            <li class="divider"></li>
-            <li><a href="imprensa.html!">Imprensa</a></li>
-        </ul>
-        <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content cor_hover">
-            <li><a href="#!">Facebook</a></li>
-            <li><a href="#!"> Instagram </a></li>
-            <li class="divider"></li>
-            <li><a href="imprensa.html!">Imprensa</a></li>
-        </ul>
 
+    <ul id="dropdown0" class="dropdown-content">
+        <li><a href="#!">Facebook</a></li>
+        <li><a href="#!"> Instagram </a></li>
+        <li class="divider"></li>
+        <li><a href="imprensa.html!">Imprensa</a></li>
+    </ul>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Facebook</a></li>
+        <li><a href="#!"> Instagram </a></li>
+        <li class="divider"></li>
+        <li><a href="imprensa.html!">Imprensa</a></li>
+    </ul>
+
+    <nav>
         <div class="nav-wrapper">
-            <img alt="Brand" src="logo.svg" class="logo" />
             <a href="#" class="sidenav-trigger" data-target="mobile-nav">
                 <i class="material-icons">menu</i> -->
             </a>
+            <img alt="Brand" src="logo.svg" class="logo" />
             <!-- menu extendido -->
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">O Manifesto</a></li>
-                <li><a href="sobre.html">O projeto</a></li>
+                <li><a href="sobre.html">O Projeto</a></li>
                 <li><a href="editor/index.html">Editor</a></li>
-                
                 <!-- Dropdown Trigger -->
                 <li><a class="dropdown-trigger" href="#!" data-target="dropdown0"> Mídia <i
                             class="material-icons right">arrow_drop_down</i></a></li>
@@ -63,74 +62,74 @@
                         class="material-icons right">arrow_drop_down</i></a></li>
             <!-- <li><a href="#">Mídia</a></li> -->
         </ul>
-        <!-- <ul class="sidenav" id="mobile-nav"> 
+    </nav>
+    <!-- <ul class="sidenav" id="mobile-nav"> 
                  <li><a href="sobre.html"> O projeto </a></li>
                  <li><a href="#">Mídia</a></li>
                  <li><a href="http://poesiacompilada.com/editor/">Escreva</a></li>
 
             </ul> -->
-    </nav>
-        <div> 
-            <p class="sobre_titulo"> //O que é ?</p>
-            <p class="sobre_paragrafo">
-                Um manifesto literário- <br/>  
-                algorítmico <br/>
-                que compila <br/>
-                códigos de máquinas <br/>
-                com códigos literários <br/>
-            </p>
 
-            <iframe class="video" width="560" height="315"
-             src="https://www.youtube.com/embed/eG3ZoOv_QU0" 
-             title="YouTube video player" frameborder="0"
-             allow="accelerometer; autoplay; clipboard-write;
+    <div class="container ">
+        <p class="sobre_titulo"> //O que é ?</p>
+        <p class="sobre_paragrafo">
+            Um manifesto literário- <br />
+            algorítmico <br />
+            que compila <br />
+            códigos para máquinas <br />
+            com códigos literários <br />
+        </p>
+
+        <iframe class="iframe" src="https://www.youtube.com/embed/eG3ZoOv_QU0" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write;
               encrypted-media; gyroscope; 
-              picture-in-picture" allowfullscreen></iframe>	
+              picture-in-picture" allowfullscreen></iframe>
 
-            <p class="sobre_titulo"> //O que não é ?</p>
-            <p class="sobre_paragrafo">
-                Códigos que geram $$ em contas bancárias <br/>  
-            </p>
-            <!-- <figure class="imagem_poesia"> -->
-            <img class="imagem_poesia" src="./poesiacompilada_.png" alt="Uma Poesia Compilada">
-                
-            <!-- </figure> -->
-            
-            <p class="sobre_titulo"> //Como surgiu ?</p>
-            <p class="sobre_paragrafo">
-                O Poesia Compilada surgiu <br/>  
-                quando eu aprendia <br/>
-                a escrever e analisar <br/>
-                algoritmos && poemas no meu <br/>
-                Ensino Médio no IFRN-Caicó. <br/>
-        </div>
-        <!--<script src="conteudo_Manifesto.js"></script> -->
-        <script>
-            // Navbar
-            const elemsDropdown = document.querySelectorAll(".dropdown-trigger");
-            const instancesDropdown = M.Dropdown.init(elemsDropdown, {
-                coverTrigger: false
-            });
-            const elemsSidenav = document.querySelectorAll(".sidenav");
-            const instancesSidenav = M.Sidenav.init(elemsSidenav, {
+        <p class="sobre_titulo"> //O que não é ?</p>
+        <p class="sobre_paragrafo">
+            Códigos que geram $$ em contas bancárias <br />
+        </p>
+        <!-- <figure class="imagem_poesia"> -->
+        <img class="imagem_poesia" src="./poesiacompilada_.png" alt="Uma Poesia Compilada">
+
+        <!-- </figure> -->
+
+        <p class="sobre_titulo"> //Como surgiu ?</p>
+        <p class="sobre_paragrafo">
+            O projeto Poesia Compilada surgiu <br />
+            quando eu aprendia <br />
+            a escrever e analisar <br />
+            algoritmos && poemas no meu <br />
+            Ensino Médio no IFRN-Caicó. <br />
+    </div>
+    <!--<script src="conteudo_Manifesto.js"></script> -->
+    <script>
+        // Navbar
+        const elemsDropdown = document.querySelectorAll(".dropdown-trigger");
+        const instancesDropdown = M.Dropdown.init(elemsDropdown, {
+            coverTrigger: false
+        });
+        const elemsSidenav = document.querySelectorAll(".sidenav");
+        const instancesSidenav = M.Sidenav.init(elemsSidenav, {
+            edge: "left"
+        });
+
+        /*$(document).ready(function () {
+            $(".sidenav").init({
                 edge: "left"
-            });
+            }).sidenav();
 
-            /*$(document).ready(function () {
-                $(".sidenav").init({
-                    edge: "left"
-                }).sidenav();
+            $('.dropdown-trigger').init(
+                {
+                    coverTrigger: false
 
-                $('.dropdown-trigger').init(
-                    {
-                        coverTrigger: false
-
-                    }
-                ).dropdown();
-            });*/
+                }
+            ).dropdown();
+        });*/
 
 
 
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
