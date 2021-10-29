@@ -26,6 +26,20 @@ h5 {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.icone {
+	width: 100%;
+	text-align: center;
+	
+}
+li {
+	display: inline;
+	padding: 5%;
+}
+li a {
+	text-decoration: none;
+	color: black;
+}
 /* .iframe{ 
 	width: 500px; 
 	height: 500px;
@@ -66,12 +80,12 @@ body{
 	font-family: 'Droid Sans Mono', monospace, mono; 
 	background-color: rgb(206, 11, 86);
 }
-.cor_hover{
+/* .cor_hover{
 	background-color: rgb(206, 11, 86);
-	text-decoration-color: white;
+	text-decoration-color: white; 
 
 }
-/* .logo{
+.logo{
 	height: 1rem; */
 	/* padding-left: 0rem; 
 } */
@@ -80,7 +94,7 @@ body{
 	text-align: center;
 	color: #333333;
 	font-size: 2rem;
-	font-family: 'Droid Sans Mono', monospace, mono ;
+	font-family: 'Droid Sans Mono', monospace, mono;
 	padding-top: 5rem;
 
 }
